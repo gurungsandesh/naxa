@@ -3,12 +3,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {},
     extend: {
       colors: {
         yellow: "#FFDC1C",
         darkyellow: "#e5c619",
         blue: "#124AF4",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
         image: 'url("./src/assets/naxa-bg.svg")',

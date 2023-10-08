@@ -98,11 +98,15 @@ const Keyhighlights = () => {
       </div>
       <div className=" h-[40vh] bg-image bg-no-repeat bg-[#F4F4F4] md:w-[70vw] md:m-auto ">
         <div className="text-center pt-40 md:pt-30">
-          <span className="text-darkyellow font-bold ">PORTFOLIO</span>
+          <span className="text-darkyellow font-bold font-montserrat ">
+            PORTFOLIO
+          </span>
         </div>
         <div className="text-center md:w-[40vw] m-auto">
-          <span className="text-5xl md:text-6xl  font-medium">
-            Diverse, <span className="text-blue">Impactful</span>, and Reliable.
+          <span className="text-5xl md:text-6xl  font-medium font-montserrat">
+            Diverse,{" "}
+            <span className="text-blue font-montserrat">Impactful</span>, and
+            Reliable.
           </span>
         </div>
       </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="flex gap-16 ">
-        <li className="cursor-pointer">Services</li>
+        <li className="cursor-pointer font-montserrat">Services</li>
 
         <Tooltip
           tooltipContent={
@@ -15,7 +15,7 @@ const Navbar = () => {
         >
           <li className="cursor-pointer group">
             <div className="flex justify-center items-center gap-3 ">
-              <span>Protfolio</span>
+              <span className="font-montserrat">Protfolio</span>
               <div className="group-hover:rotate-[180deg]">
                 <AiFillCaretDown />
               </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
         >
           <li className="cursor-pointer group">
             <div className="flex justify-center items-center gap-3 ">
-              <span>Company</span>
+              <span className="font-montserrat">Company</span>
               <div className="group-hover:rotate-[180deg]">
                 <AiFillCaretDown />
               </div>
@@ -50,14 +50,14 @@ const Navbar = () => {
         >
           <li className="cursor-pointer group">
             <div className="flex justify-center items-center gap-3 ">
-              <span>Events</span>
+              <span className="font-montserrat">Events</span>
               <div className="group-hover:rotate-[180deg]">
                 <AiFillCaretDown />
               </div>
             </div>
           </li>
         </Tooltip>
-        <li className="cursor-pointer">Blog</li>
+        <li className="cursor-pointer font-montserrat">Blog</li>
       </ul>
     </nav>
   );
@@ -73,7 +73,9 @@ const TooltipContent = ({ menu }: tooltipContentProps) => {
   return (
     <div className="min-w-[200px] bg-white  flex flex-col">
       {menu.map((val: any) => (
-        <div className="hover:bg-yellow py-3 px-5">{val}</div>
+        <div className="hover:bg-yellow py-3 px-5" key={val}>
+          {val}
+        </div>
       ))}
     </div>
   );
