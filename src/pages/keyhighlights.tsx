@@ -76,8 +76,8 @@ const Keyhighlights = () => {
   }, []);
 
   return (
-    <div className="bg-[#F4F4F4]">
-      <div className="flex justify-between items-center  w-[80vw] m-auto pt-4 ">
+    <div className="bg-[#F4F4F4] overflow-hidden">
+      <div className="flex justify-between items-center  w-[70vw] m-auto pt-4 ">
         <div className="cursor-pointer w-[90px] md:w-[120px]">
           <img src={logo} alt="logo" />
         </div>
@@ -96,7 +96,7 @@ const Keyhighlights = () => {
           </div>
         </div>
       </div>
-      <div className=" h-[40vh] bg-image bg-no-repeat bg-[#F4F4F4] ">
+      <div className=" h-[40vh] bg-image bg-no-repeat bg-[#F4F4F4] md:w-[70vw] md:m-auto ">
         <div className="text-center pt-40 md:pt-30">
           <span className="text-darkyellow font-bold ">PORTFOLIO</span>
         </div>
@@ -106,11 +106,13 @@ const Keyhighlights = () => {
           </span>
         </div>
       </div>
-      <div className="w-10/12 m-auto mb-20 bg-white ">
-        <ProjectNavigationCard />
-      </div>
 
-      <div className="w-1/1 bg-white pt-20 pb-20">
+      <div className="w-[100vw] bg-white pt-20 pb-20 ">
+        <div className="  md:w-[100vw] -mt-[230px]  ">
+          <div className="md:w-[80vw] md:m-auto p-20 ">
+            <ProjectNavigationCard />
+          </div>
+        </div>
         <div className="w-[80vw] m-auto mb-[15rem] flex flex-col gap-y-16 md:flex-row md:flex-wrap md:gap-10 md:justify-center ">
           {!data && <CardSekeleton />}
           {!data && <CardSekeleton />}

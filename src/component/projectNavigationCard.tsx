@@ -21,7 +21,7 @@ const ProjectNavigationCard = () => {
   };
 
   return (
-    <div className="border shadow-md ">
+    <div className="border shadow-md bg-white">
       <ul className="flex flex-wrap my-2 ">
         {projectTypeList.map((val: string) => (
           <li

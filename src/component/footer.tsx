@@ -9,7 +9,7 @@ import FooterCard from "./footerCard";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-[2rem] md:w-[80vw] md:m-auto pb-20">
+    <div className="flex flex-col gap-[2rem] md:w-[70vw] md:m-auto pb-20">
       <FooterCard />
       <div className="flex flex-col gap-y-[5rem] md:flex-row md:justify-between ">
         {/* grid */}
